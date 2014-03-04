@@ -1,57 +1,13 @@
-<style>
-  main {
-    border: 1px solid #1A380F;
-    width: 850px;
-    margin: 0px auto;
-    background-color: #F6E3FA;
-    padding: 50px 25px;
-  }
-</style>
+<section id="header" class="group">
+  <h1>Insert Icon Here</h1>
+  <ul class="group">
+    <li><%= link_to "Email", "mailto:Sarah.Michaelson@gmail.com" %></li>
+    <li><%= link_to "Github", "https://github.com/skmichaelson" %></li>
+    <li><%= link_to "LinkedIn", "www.linkedin.com/in/skmichaelson" %></li>
+    <li><%= link_to "Resume", "#" %></li>
+  </ul>
+</section>
 
-<style>
-  #header {
-    border: 1px solid black;
-    width: 900px;
-    margin: 0px auto;
-    background-color: #102E02;
-    color: #EEE;
-    display: block;
-    margin-top: 50px;
-    height: 70px;
-  }
-
-  #header h1 {
-    float: left;
-  }
-
-  #header ul {
-    float: right;
-    margin-top: 27px;
-  }
-
-  #header li {
-    float: left;
-  }
-
-  #header a {
-    padding: 27px 30px;
-    color: #eee;
-  }
-
-  #header a:hover {
-    background-color: #0A1C02;
-  }
-</style>
-
-  <section id="header" class="group">
-    <h1>Insert Icon Here</h1>
-    <ul class="group">
-      <li><%= link_to "Email", "mailto:Sarah.Michaelson@gmail.com" %></li>
-      <li><%= link_to "Github", "https://github.com/skmichaelson" %></li>
-      <li><%= link_to "LinkedIn", "www.linkedin.com/in/skmichaelson" %></li>
-      <li><%= link_to "Resume", "#" %></li>
-    </ul>
-  </section>
 <main class="group">
 
 <!-- Sidebar -->
@@ -110,177 +66,41 @@
       </ul>
     </section>
   </div>
+
 <!-- About me -->
 
-<style>
-#about-me {
-  width: 530px;
-  border: 1px solid black;
-  float: right;
-  margin: 10px;
-  background-color: #AEC9A1;
-  color: #111;
-  padding: 10px;
-}
+  <section id="about-me" class="group profile-info">
+    <h1>About Me<h1>
 
-#about-me ul {
-  border: 1px solid red;
-  padding: 10px;
-}
+    <div id="bio">
+    </div>
 
-</style>
-  <section id="about-me" class="group">
-    <h1>Hello!<h1>
-
-    I'm Sarah, Nutrition Scientist and running enthusiast
-    turned web developer. My skill set includes:
-
-    <ul>
-      <li>Ruby on Rails</li>
-      <li>JavaScript</li>
-      <li>HTML/CSS</li>
-    </ul>
-
-    When I'm not hacking, you can find me running (if you can catch me!),
-    playing the cello, or mourning the loss of my single-serving
-    French press.
   </section>
 
 <!-- Projects -->
 
-<style>
-  #projects {
-    width: 530px;
-    border: 1px solid black;
-    float: right;
-    margin: 10px;
-    background-color: #AEC9A1;
-    color: #111;
-    padding: 10px;
-  }
-
-  .description {
-    border: 1px solid green;
-    padding: 10px;
-  }
-
-  .app-data {
-    border: 1px solid blue;
-    padding: 10px;
-  }
-</style>
-
-  <section id="projects">
+  <section id="projects" class="group profile-info">
     <h1>Projects</h1>
 
     <div class="app-data">
-    Fitness App (Rails, Ruby, HTML, CSS, RSpec)
-    (Inspired by myfitnesspal)
-    https://github.com/skmichaelson/fitnessapp (source)
-    http://applecinnamon-fitness-app.herokuapp.com (live)
-
-      <ul class="description">
-        <li>Includes a custom method to import CSV
-          files from the USDA food database and convert
-          each entry into a food object</li>
-        <li>Sensitive information is protected using BCrypt and Figaro</li>
-        <li>FeedItems and ReportItems are polymorphic models</li>
-      </ul>
-
     </div>
   </section>
 
 <!-- Resume -->
 
-<style>
-  #resume {
-    width: 530px;
-    border: 1px solid black;
-    float: right;
-    margin: 10px;
-    background-color: #AEC9A1;
-    color: #111;
-    padding: 10px;
-  }
-</style>
-
-  <section id="resume">
+  <section id="resume" class="group profile-info">
     <h1>Resume</h1>
+
+    <div id="my-resume">
+    </div>
   </section>
 
 <!-- Contact -->
 
-<style>
-  #contact {
-    width: 530px;
-    border: 1px solid black;
-    float: right;
-    margin: 10px;
-    background-color: #AEC9A1;
-    color: #111;
-    padding: 10px;
-  }
-
-  .form-input {
-    margin: 20px;
-  }
-
-  .form-input label {
-    display: block;
-    margin: 5px;
-  }
-
-  .form-input input {
-    border: 1px solid #222;
-    padding: 5px;
-    width: 475px;
-    border-radius: 5px;
-    background-color: #FFF;
-  }
-
-  .form-input input:focus {
-    box-shadow: 0 0 0.7em #200B40;
-  }
-
-  .form-input textarea {
-    border: 1px solid #222;
-    padding: 5px;
-    width: 485px;
-    height: 200px;
-    border-radius: 5px;
-    background-color: #FFF;
-  }
-
-  .form-input textarea:focus {
-    border: 1px solid #37731A;
-    box-shadow: 0 0 0.7em #200B40;
-  }
-</style>
-
-  <section id="contact">
+  <section id="contact" class="group profile-info">
     <h1>Contact</h1>
-    <form action="<%= send_message_contents_url %>" method="POST">
-      <div class="form-input">
-        <label for="your-name">Your name</label>
-        <input type="text" name="message[sender_name]" id="your-name">
-      </div>
 
-      <div class="form-input">
-        <label for="email">Your email</label>
-        <input type="text" name="message[email]" id="email">
-      </div>
-
-      <div class="form-input">
-        <label for="subject">Subject</label>
-        <input type="text" name="message[subject]" id="subject">
-      </div>
-
-      <div class="form-input">
-        <label for="msgbody">Message</label>
-        <textarea name="message[body]" id="msgbody"></textarea>
-      </div>
-
-      <input type="submit" class="button" value="Send">
+    <form id="contact-me" action="<%= send_message_contents_url %>" method="POST">
     </form>
   </section>
 
@@ -304,17 +124,3 @@
   <section id="footer">
     <h1>Footer</h1>
   </section>
-<!-- No need to go crazy with your personal site.
-Maybe a jQuery animation here and there if it tickles your fancy.
-
-Include:
-
-A personal summary
-A list of your projects with short descriptions
-Use the descriptions from your résumé
-For each project include a live link and a link to its Github repo
-Don't forget the demo login info if needed
-Easy access to your email (e.g. a link at the bottom of
-your personal summary)
-Links to your blog / Twitter / etc if they're well
-maintained and show your interest in the web/tech. -->

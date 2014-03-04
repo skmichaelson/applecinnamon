@@ -61,7 +61,6 @@ a {
 }
 
 input[type="text"],
-button,
 textarea {
   display: inline-block;
   box-sizing: content-box;
@@ -74,4 +73,12 @@ textarea {
   vertical-align: baseline;
   background: transparent;
   color: inherit;
+}
+
+main {
+  border: 1px solid #1A380F;
+  width: 850px;
+  margin: 0px auto;
+  background-color: #F6E3FA;
+  padding: 50px 25px;
 }

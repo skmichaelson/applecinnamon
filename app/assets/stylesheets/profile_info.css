@@ -1,0 +1,9 @@
+.profile-info {
+  width: 530px;
+  border: 1px solid black;
+  float: right;
+  margin: 10px;
+  background-color: #AEC9A1;
+  color: #111;
+  padding: 10px;
+}

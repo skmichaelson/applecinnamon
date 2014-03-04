@@ -1,0 +1,32 @@
+#header {
+  border: 1px solid black;
+  width: 900px;
+  margin: 0px auto;
+  background-color: #102E02;
+  color: #EEE;
+  display: block;
+  margin-top: 50px;
+  height: 70px;
+}
+
+#header h1 {
+  float: left;
+}
+
+#header ul {
+  float: right;
+  margin-top: 27px;
+}
+
+#header li {
+  float: left;
+}
+
+#header a {
+  padding: 27px 30px;
+  color: #eee;
+}
+
+#header a:hover {
+  background-color: #0A1C02;
+}

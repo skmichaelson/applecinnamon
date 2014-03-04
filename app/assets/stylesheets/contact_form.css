@@ -1,0 +1,34 @@
+.form-input {
+  margin: 20px;
+}
+
+.form-input label {
+  display: block;
+  margin: 5px;
+}
+
+.form-input input {
+  border: 1px solid #222;
+  padding: 5px;
+  width: 475px;
+  border-radius: 5px;
+  background-color: #FFF;
+}
+
+.form-input input:focus {
+  box-shadow: 0 0 0.7em #200B40;
+}
+
+.form-input textarea {
+  border: 1px solid #222;
+  padding: 5px;
+  width: 485px;
+  height: 200px;
+  border-radius: 5px;
+  background-color: #FFF;
+}
+
+.form-input textarea:focus {
+  border: 1px solid #37731A;
+  box-shadow: 0 0 0.7em #200B40;
+}
