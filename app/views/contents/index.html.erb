@@ -47,9 +47,14 @@
   padding: 10px;
 }
 
+#about-me ul {
+  border: 1px solid red;
+  padding: 10px;
+}
+
 </style>
   <section id="about-me" class="group">
-    Hello!
+    <h1>Hello!<h1>
 
     I'm Sarah, Nutrition Scientist and running enthusiast
     turned web developer. My skill set includes:
@@ -77,10 +82,36 @@
     color: #F7F1DA;
     padding: 10px;
   }
+
+  .description {
+    border: 1px solid green;
+    padding: 10px;
+  }
+
+  .app-data {
+    border: 1px solid blue;
+    padding: 10px;
+  }
 </style>
 
   <section id="projects">
-    Projects
+    <h1>Projects</h1>
+
+    <div class="app-data">
+    Fitness App (Rails, Ruby, HTML, CSS, RSpec)
+    (Inspired by myfitnesspal)
+    https://github.com/skmichaelson/fitnessapp (source)
+    http://applecinnamon-fitness-app.herokuapp.com (live)
+
+      <ul class="description">
+        <li>Includes a custom method to import CSV
+          files from the USDA food database and convert
+          each entry into a food object</li>
+        <li>Sensitive information is protected using BCrypt and Figaro</li>
+        <li>FeedItems and ReportItems are polymorphic models</li>
+      </ul>
+
+    </div>
   </section>
 
 <!-- Resume -->
@@ -98,7 +129,7 @@
 </style>
 
   <section id="resume">
-    Resume
+    <h1>Resume</h1>
   </section>
 
 <!-- Contact -->
@@ -116,7 +147,8 @@
 </style>
 
   <section id="contact">
-    Contact
+    <h1>Contact</h1>
+
   </section>
 
 <!-- Footer -->
@@ -134,7 +166,7 @@
 </style>
 
   <section id="footer">
-    Footer
+    <h1>Footer</h1>
   </section>
 
 </main>
