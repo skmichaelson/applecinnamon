@@ -14,19 +14,42 @@
     width: 900px;
     margin: 0px auto;
     background-color: #102E02;
-    color: #111;
+    color: #EEE;
     display: block;
     margin-top: 50px;
+    height: 70px;
+  }
+
+  #header h1 {
+    float: left;
+  }
+
+  #header ul {
+    float: right;
+    margin-top: 27px;
+  }
+
+  #header li {
+    float: left;
+  }
+
+  #header a {
+    padding: 27px 30px;
+    color: #eee;
+  }
+
+  #header a:hover {
+    background-color: #0A1C02;
   }
 </style>
 
-  <section id="header">
-    <h1>Header</h1>
-    <ul>
+  <section id="header" class="group">
+    <h1>Insert Icon Here</h1>
+    <ul class="group">
       <li><%= link_to "Email", "mailto:Sarah.Michaelson@gmail.com" %></li>
       <li><%= link_to "Github", "https://github.com/skmichaelson" %></li>
       <li><%= link_to "LinkedIn", "www.linkedin.com/in/skmichaelson" %></li>
-      <li>Resume</li>
+      <li><%= link_to "Resume", "#" %></li>
     </ul>
   </section>
 <main class="group">
@@ -35,29 +58,51 @@
 
 <style>
   #sidebar {
-    width: 178px;
-    float: left;
-    margin: 0px auto;
+    margin: 0px;
+    width: 210px;
     background-color: #AEC9A1;
     color: #111;
-    border: 1px solid #222;
     padding: 10px;
+  }
+
+  #sidebar li > a {
+    border-bottom: 1px solid black;
+    padding: 10px 5px;
+    margin: 0px 5px;
+    display: block;
+  }
+
+  #sidebar li > a:hover {
+    background-color: #8FA883
   }
 
   #florish {
     z-index: -1;
-    width: 200px;
-    border: 10px solid black;
+    width: 230px;
+    border: 20px solid black;
     border-radius: 10px;
     float: left;
   }
+
+  #name-position {
+    display: block;
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 0px auto;
+    background-color: #eee;
+  }
+
 </style>
 
   <div id="florish" class="group">
-    <section id="sidebar" class="group">
-      Sarah K Michaelson
-      Web Developer
-      <ul>
+    <section id="sidebar">
+      <div id="name-position">
+        Sarah K Michaelson
+        Web Developer
+      </div>
+
+      <ul class="group">
         <li><%= link_to "About Me", "#" %></li>
         <li><%= link_to "Projects", "#" %></li>
         <li><%= link_to "Resume", "#" %></li>
@@ -186,7 +231,7 @@
   }
 
   .form-input input {
-    border: 1px solid navy;
+    border: 1px solid #222;
     padding: 5px;
     width: 475px;
     border-radius: 5px;
@@ -194,11 +239,12 @@
   }
 
   .form-input input:focus {
-    border: 1px solid pink;
+    border: 1px solid #37731A;
   }
 
   .form-input textarea {
-    border: 1px solid navy;
+    border: 1px solid #222;
+    padding: 5px;
     width: 485px;
     height: 200px;
     border-radius: 5px;
@@ -206,7 +252,7 @@
   }
 
   .form-input textarea:focus {
-    border: 1px solid pink;
+    border: 1px solid #37731A;
   }
 </style>
 
@@ -247,9 +293,10 @@
     width: 900px;
     margin: 0px auto;
     background-color: #102E02;
-    color: #111;
+    color: #CCC;
     display: block;
     margin-bottom: 50px;
+    height: 40px;
   }
 </style>
 
