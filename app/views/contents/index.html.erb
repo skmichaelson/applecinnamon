@@ -144,11 +144,32 @@
     color: #F7F1DA;
     padding: 10px;
   }
+
+  .form-input {
+    border: 1px solid pink;
+    margin: 10px;
+    padding: 10px 5px;
+  }
 </style>
 
   <section id="contact">
     <h1>Contact</h1>
     <form action="<%= send_message_contents_url %>" method="POST">
+      <div class="form-input">
+        <label for="email">Email</label>
+        <input type="text" name="message[email]" id="email">
+      </div>
+
+      <div class="form-input">
+        <label for="subject">Subject</label>
+        <input type="text" name="message[subject]" id="subject">
+      </div>
+
+      <div class="form-input">
+        <label for="msgbody">Message</label>
+        <input type="text" name="message[body]" id="msgbody">
+      </div>
+
       <input type="submit" class="button" value="Send">
     </form>
   </section>
