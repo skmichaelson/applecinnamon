@@ -1,39 +1,70 @@
 <style>
   main {
     border: 1px solid black;
-    width: 800px;
-    margin: 50px auto;
+    width: 850px;
+    margin: 0px auto;
     background-color: #F6E3FA;
+    padding: 50px 25px;
   }
 </style>
 
+<style>
+  #header {
+    border: 1px solid black;
+    width: 900px;
+    margin: 0px auto;
+    background-color: #102E02;
+    color: #111;
+    display: block;
+    margin-top: 50px;
+  }
+</style>
+
+  <section id="header">
+    <h1>Header</h1>
+    <ul>
+      <li><%= link_to "Email", "mailto:Sarah.Michaelson@gmail.com" %></li>
+      <li><%= link_to "Github", "https://github.com/skmichaelson" %></li>
+      <li><%= link_to "LinkedIn", "www.linkedin.com/in/skmichaelson" %></li>
+      <li>Resume</li>
+    </ul>
+  </section>
 <main class="group">
 
 <!-- Sidebar -->
 
 <style>
   #sidebar {
-    width: 180px;
-    border: 1px solid black;
+    width: 178px;
     float: left;
-    margin: 10px;
-    background-color: #4D2B48;
-    color: #F7F1DA;
+    margin: 0px auto;
+    background-color: #AEC9A1;
+    color: #111;
+    border: 1px solid #222;
     padding: 10px;
+  }
+
+  #florish {
+    z-index: -1;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 10px;
+    float: left;
   }
 </style>
 
-  <section id="sidebar" class="group">
-    Sarah K Michaelson
-    Web Developer
-    <ul>
-      <li>Email</li>
-      <li>Github</li>
-      <li>LinkedIn</li>
-      <li>Resume</li>
-    </ul>
-  </section>
-
+  <div id="florish" class="group">
+    <section id="sidebar" class="group">
+      Sarah K Michaelson
+      Web Developer
+      <ul>
+        <li><%= link_to "About Me", "#" %></li>
+        <li><%= link_to "Projects", "#" %></li>
+        <li><%= link_to "Resume", "#" %></li>
+        <li><%= link_to "Contact", "#" %></li>
+      </ul>
+    </section>
+  </div>
 <!-- About me -->
 
 <style>
@@ -42,8 +73,8 @@
   border: 1px solid black;
   float: right;
   margin: 10px;
-  background-color: #4D2B48;
-  color: #F7F1DA;
+  background-color: #AEC9A1;
+  color: #111;
   padding: 10px;
 }
 
@@ -78,8 +109,8 @@
     border: 1px solid black;
     float: right;
     margin: 10px;
-    background-color: #4D2B48;
-    color: #F7F1DA;
+    background-color: #AEC9A1;
+    color: #111;
     padding: 10px;
   }
 
@@ -122,8 +153,8 @@
     border: 1px solid black;
     float: right;
     margin: 10px;
-    background-color: #4D2B48;
-    color: #F7F1DA;
+    background-color: #AEC9A1;
+    color: #111;
     padding: 10px;
   }
 </style>
@@ -140,15 +171,42 @@
     border: 1px solid black;
     float: right;
     margin: 10px;
-    background-color: #4D2B48;
-    color: #F7F1DA;
+    background-color: #AEC9A1;
+    color: #111;
     padding: 10px;
   }
 
   .form-input {
+    margin: 20px;
+  }
+
+  .form-input label {
+    display: block;
+    margin: 5px;
+  }
+
+  .form-input input {
+    border: 1px solid navy;
+    padding: 5px;
+    width: 475px;
+    border-radius: 5px;
+    background-color: #FFF;
+  }
+
+  .form-input input:focus {
     border: 1px solid pink;
-    margin: 10px;
-    padding: 10px 5px;
+  }
+
+  .form-input textarea {
+    border: 1px solid navy;
+    width: 485px;
+    height: 200px;
+    border-radius: 5px;
+    background-color: #FFF;
+  }
+
+  .form-input textarea:focus {
+    border: 1px solid pink;
   }
 </style>
 
@@ -156,7 +214,12 @@
     <h1>Contact</h1>
     <form action="<%= send_message_contents_url %>" method="POST">
       <div class="form-input">
-        <label for="email">Email</label>
+        <label for="your-name">Your name</label>
+        <input type="text" name="message[sender_name]" id="your-name">
+      </div>
+
+      <div class="form-input">
+        <label for="email">Your email</label>
         <input type="text" name="message[email]" id="email">
       </div>
 
@@ -167,7 +230,7 @@
 
       <div class="form-input">
         <label for="msgbody">Message</label>
-        <input type="text" name="message[body]" id="msgbody">
+        <textarea name="message[body]" id="msgbody"></textarea>
       </div>
 
       <input type="submit" class="button" value="Send">
@@ -176,24 +239,23 @@
 
 <!-- Footer -->
 
+</main>
+
 <style>
   #footer {
-    width: 530px;
     border: 1px solid black;
-    float: right;
-    margin: 10px;
-    background-color: #4D2B48;
-    color: #F7F1DA;
-    padding: 10px;
+    width: 900px;
+    margin: 0px auto;
+    background-color: #102E02;
+    color: #111;
+    display: block;
+    margin-bottom: 50px;
   }
 </style>
 
   <section id="footer">
     <h1>Footer</h1>
   </section>
-
-</main>
-
 <!-- No need to go crazy with your personal site.
 Maybe a jQuery animation here and there if it tickles your fancy.
 
