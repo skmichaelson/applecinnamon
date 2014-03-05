@@ -4,7 +4,12 @@ window.SarahWebsite = {
   Views: {},
   Routers: {},
   initialize: function() {
-    alert('Hello from Backbone!');
+
+    new SarahWebsite.Routers.Contents({
+      "$rootEl": $("main")
+    });
+
+    Backbone.history.start();
   }
 };
 
