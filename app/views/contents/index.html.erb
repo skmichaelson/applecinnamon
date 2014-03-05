@@ -18,7 +18,12 @@
     width: 210px;
     background-color: #AEC9A1;
     color: #111;
-    padding: 10px;
+    padding: 5px 0px;
+    border: 1px solid black;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
   }
 
   #sidebar li > a {
@@ -26,6 +31,7 @@
     padding: 10px 5px;
     margin: 0px 5px;
     display: block;
+    color: black;
   }
 
   #sidebar li > a:hover {
@@ -33,11 +39,10 @@
   }
 
   #florish {
-    z-index: -1;
     width: 230px;
-    border: 20px solid black;
     border-radius: 10px;
     float: left;
+    position: relative;
   }
 
   #name-position {
@@ -49,9 +54,28 @@
     background-color: #eee;
   }
 
-</style>
+  .profile-info h1 > a {
+    display: block;
+    padding: 10px;
+    color: black;
+  }
+
+  .profile-info h1 > a:hover {
+    background-color: #8FA883
+  }
+
+  .profile-info {
+    width: 530px;
+    border: 1px solid black;
+    float: right;
+    margin: 10px;
+    background-color: #AEC9A1;
+    color: #111;
+  }
+  </style>
 
   <div id="florish" class="group">
+    <%= image_tag 'paisley.png' %>
     <section id="sidebar">
       <div id="name-position">
         Sarah K Michaelson
@@ -59,10 +83,10 @@
       </div>
 
       <ul class="group">
-        <li><%= link_to "About Me", "#" %></li>
-        <li><%= link_to "Projects", "#" %></li>
-        <li><%= link_to "Resume", "#" %></li>
-        <li><%= link_to "Contact", "#" %></li>
+        <li><%= link_to "About Me", "#about_me" %></li>
+        <li><%= link_to "Projects", "#projects" %></li>
+        <li><%= link_to "Resume", "#resume" %></li>
+        <li><%= link_to "Contact", "#contact" %></li>
       </ul>
     </section>
   </div>
@@ -70,7 +94,7 @@
 <!-- About me -->
 
   <section class="group profile-info">
-    <h1>About Me</h1>
+    <h1><%= link_to "About Me", "#about_me" %></h1>
 
     <div id="bio">
     </div>
@@ -80,7 +104,7 @@
 <!-- Projects -->
 
   <section id="projects" class="group profile-info">
-    <h1>Projects</h1>
+    <h1><%= link_to "Projects", "#projects" %></h1>
 
     <div id="app-data">
     </div>
@@ -89,7 +113,7 @@
 <!-- Resume -->
 
   <section id="resume" class="group profile-info">
-    <h1>Resume</h1>
+    <h1><%= link_to "Resume", "#resume" %></h1>
 
     <div id="my-resume">
     </div>
@@ -98,7 +122,7 @@
 <!-- Contact -->
 
   <section id="contact" class="group profile-info">
-    <h1>Contact</h1>
+    <h1><%= link_to "Contact", "#contact" %></h1>
 
     <form id="contact-me" action="<%= send_message_contents_url %>" method="POST">
     </form>
