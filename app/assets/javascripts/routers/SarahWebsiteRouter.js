@@ -15,22 +15,22 @@ SarahWebsite.Routers.Contents = Backbone.Router.extend({
   },
 
   aboutMe: function () {
-    aboutMe = "new SarahWebsite.Views.AboutMe";
-    $('#bio').html(aboutMe);
+    aboutMe = new SarahWebsite.Views.AboutMe();
+    $('#bio').html(aboutMe.render().$el);
   },
 
   contact: function () {
-    contact = "new SarahWebsite.Views.ContactForm";
-    $('#contact-me').html(contact);
+    contact = new SarahWebsite.Views.ContactForm();
+    $('#contact-me').html(contact.render().$el);
   },
 
   projects: function () {
-    projects = "new SarahWebsite.Views.Projects";
-    $('#app-data').html(projects);
+    projects = new SarahWebsite.Views.Projects();
+    $('#app-data').html(projects.render().$el);
   },
 
   resume: function () {
-    resume = "new SarahWebsite.Views.Resume";
-    $('#my-resume').html(resume);
+    resume = new SarahWebsite.Views.Resume();
+    $('#my-resume').html(resume.render().$el);
   }
 })
