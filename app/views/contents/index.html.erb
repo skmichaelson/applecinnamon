@@ -15,11 +15,11 @@
 <!-- End of resume -->
 
 <section id="header" class="group">
-  <h1>Insert Icon Here</h1>
+  <!-- <h1>Insert Icon Here</h1> -->
   <ul class="group">
     <li><%= link_to "Email", "mailto:Sarah.Michaelson@gmail.com" %></li>
     <li><%= link_to "Github", "https://github.com/skmichaelson" %></li>
-    <li><%= link_to "LinkedIn", "www.linkedin.com/in/skmichaelson" %></li>
+    <li><%= link_to "LinkedIn", "http://www.linkedin.com/in/skmichaelson" %></li>
     <li><%= link_to "Resume", "#resume" %></li>
   </ul>
 </section>
@@ -35,10 +35,10 @@
     background-color: #AEC9A1;
     color: #111;
     padding: 5px 0px;
-    border: 1px solid black;
+    border: 1px solid #555;
     position: absolute;
     top: 15px;
-    left: 15px;
+    left: 20px;
     z-index: 2;
   }
 
@@ -56,7 +56,6 @@
 
   #florish {
     width: 230px;
-    border-radius: 10px;
     float: left;
     position: relative;
   }
@@ -68,6 +67,7 @@
     border: 1px solid black;
     margin: 0px auto;
     background-color: #eee;
+    position: relative;
   }
 
   .profile-info h1 > a {
@@ -82,11 +82,26 @@
 
   .profile-info {
     width: 530px;
-    border: 1px solid black;
     float: right;
-    margin: 10px;
+    margin-bottom: 20px;
     background-color: #AEC9A1;
     color: #111;
+    height: 300px;
+  }
+
+  #caption-top {
+    top: 0;
+    left: 5px;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+  }
+
+  #caption-bottom {
+    bottom: 5px;
+    right: 5px;
+    position: absolute;
+    color: white;
   }
   </style>
 
@@ -94,8 +109,15 @@
     <%= image_tag 'paisley.png' %>
     <section id="sidebar">
       <div id="name-position">
-        Sarah K Michaelson
-        Web Developer
+        <%= image_tag 'parkbench.jpg' %>
+
+        <div id="caption-top">
+          Sarah K Michaelson
+        </div>
+
+        <div id="caption-bottom">
+          Web Developer
+        </div>
       </div>
 
       <ul class="group">
@@ -107,35 +129,8 @@
     </section>
   </div>
 
-<!-- About me -->
-
-  <section class="group profile-info">
-    <h1><%= link_to "About Me", "#about_me" %></h1>
-
-    <div id="bio">
-    </div>
-
+  <section class="group profile-info" id="display">
   </section>
-
-<!-- Projects -->
-
-  <section id="projects" class="group profile-info">
-    <h1><%= link_to "Projects", "#projects" %></h1>
-
-    <div id="app-data">
-    </div>
-  </section>
-
-
-<!-- Contact -->
-
-  <section id="contact" class="group profile-info">
-    <h1><%= link_to "Contact", "#contact" %></h1>
-
-    <form id="contact-me" action="<%= send_message_contents_url %>" method="POST">
-    </form>
-  </section>
-
 <!-- Footer -->
 
 </main>
@@ -155,5 +150,5 @@
 </style>
 
   <section id="footer">
-    <h1>Footer</h1>
+    <!-- <h1>Footer</h1> -->
   </section>

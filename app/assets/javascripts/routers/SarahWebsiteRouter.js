@@ -17,17 +17,17 @@ SarahWebsite.Routers.Contents = Backbone.Router.extend({
 
   aboutMe: function () {
     aboutMe = new SarahWebsite.Views.AboutMe();
-    $('#bio').html(aboutMe.render().$el);
+    $('#display').html(aboutMe.render().$el);
   },
 
   contact: function () {
     contact = new SarahWebsite.Views.ContactForm();
-    $('#contact-me').html(contact.render().$el);
+    $('#display').html(contact.render().$el);
   },
 
   projects: function () {
     projects = new SarahWebsite.Views.Projects();
-    $('#app-data').html(projects.render().$el);
+    $('#display').html(projects.render().$el);
   },
 
   resume: function () {
