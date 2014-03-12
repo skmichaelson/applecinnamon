@@ -30,6 +30,6 @@ SarahWebsite.Routers.Contents = Backbone.Router.extend({
   },
 
   resume: function () {
-    // Display the modal!
+    $("#resume").addClass("has-active-modal");
   }
 })
