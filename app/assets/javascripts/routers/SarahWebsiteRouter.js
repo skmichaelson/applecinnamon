@@ -30,7 +30,6 @@ SarahWebsite.Routers.Contents = Backbone.Router.extend({
   },
 
   resume: function () {
-    resume = new SarahWebsite.Views.Resume();
-    $('#my-resume').html(resume.render().$el);
+    // Display the modal!
   }
 })
