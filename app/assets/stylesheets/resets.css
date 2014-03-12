@@ -1,0 +1,46 @@
+html, body, header, footer, section, article, div,
+strong, a, img, p, h1, h2, h3, time, ul, li, small,
+form, label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+button {
+    -webkit-appearance: none;
+    display: inline;
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    width: auto;
+    font: inherit;
+    vertical-align: baseline;
+    background: transparent;
+    color: inherit;
+  }
+
+input[type="text"],
+textarea {
+  display: inline-block;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  color: inherit;
+}
+
+.group:after {
+  display: block;
+  content: "";
+  clear: both;
+}

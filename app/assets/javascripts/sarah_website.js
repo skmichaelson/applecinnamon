@@ -14,9 +14,4 @@ window.SarahWebsite = {
 
 $(document).ready(function(){
     SarahWebsite.initialize();
-
-    $(".modal-close-button").on("click", function(event){
-        event.preventDefault();
-        $("#resume").removeClass("has-active-modal");
-    });
 });
