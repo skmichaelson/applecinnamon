@@ -1,8 +1,8 @@
-SarahWebsite.Views.ContactForm = Backbone.View.extend({
+SarahWebsite.Views.Home = Backbone.View.extend({
   $el: $("#display"),
   className: "group",
 
-  template: JST['contact'],
+  template: JST['home'],
 
   render: function() {
     var renderedContent = this.template();

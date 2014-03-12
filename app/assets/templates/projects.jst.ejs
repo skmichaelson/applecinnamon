@@ -3,10 +3,17 @@ Fitness App (Rails, Ruby, HTML, CSS, RSpec)
 https://github.com/skmichaelson/fitnessapp (source)
 http://applecinnamon-fitness-app.herokuapp.com (live)
 
-  <ul class="description">
-    <li>Includes a custom method to import CSV
-      files from the USDA food database and convert
-      each entry into a food object</li>
-    <li>Sensitive information is protected using BCrypt and Figaro</li>
-    <li>FeedItems and ReportItems are polymorphic models</li>
-  </ul>
+<ul class="description">
+  <li>Includes a custom script to import CSV
+    files from the USDA food database and convert
+    each entry into a food object
+  </li>
+
+  <li>Calculates BMR using the Harris-Benedict equation
+    and estimates calorie goals based on user-provided input
+  </li>
+
+  <li>FeedItems and ReportItems belong to weigh in or daily
+    entry objects via polymorphic associations
+  </li>
+</ul>

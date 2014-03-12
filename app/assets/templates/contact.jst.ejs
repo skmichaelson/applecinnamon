@@ -1,21 +1,22 @@
-<div class="form-input">
-  <label for="your-name">Your name</label>
-  <input type="text" name="message[sender_name]" id="your-name">
+<div class="group top">
+  <div class="form-input half">
+    <label for="your-name">Your name</label>
+    <input type="text" name="message[sender_name]" id="your-name">
+  </div>
+
+  <div class="form-input half">
+    <label for="email">Your email address</label>
+    <input type="text" name="message[email]" id="email">
+  </div>
 </div>
 
-<div class="form-input">
-  <label for="email">Your email</label>
-  <input type="text" name="message[email]" id="email">
+<div class="form-input full">
+  <label for="msg-body">Message</label>
+  <textarea name="message[body]" id="msg-body"></textarea>
 </div>
 
-<div class="form-input">
-  <label for="subject">Subject</label>
-  <input type="text" name="message[subject]" id="subject">
-</div>
+<input type="hidden" name="message[subject]" value="Contact from website">
 
-<div class="form-input">
-  <label for="msgbody">Message</label>
-  <textarea name="message[body]" id="msgbody"></textarea>
+<div id="send-message">
+  <input type="submit" class="button" value="Send">
 </div>
-
-<input type="submit" class="button" value="Send">

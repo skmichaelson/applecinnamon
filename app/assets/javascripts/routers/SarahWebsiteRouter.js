@@ -13,6 +13,8 @@ SarahWebsite.Routers.Contents = Backbone.Router.extend({
   },
 
   index: function () {
+    home = new SarahWebsite.Views.Home();
+    $('#display').html(home.render().$el);
   },
 
   aboutMe: function () {
