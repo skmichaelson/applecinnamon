@@ -3,7 +3,6 @@
   width: 900px;
   margin: 0px auto;
   background-color: #102E02;
-  color: #EEE;
   display: block;
   margin-top: 50px;
   height: 70px;
@@ -24,7 +23,7 @@
 
 #header a {
   padding: 27px 30px;
-  color: #eee;
+  color: #F6E3FA;
 }
 
 #header a:hover {

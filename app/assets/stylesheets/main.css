@@ -1,0 +1,9 @@
+#display {
+    width: 530px;
+    float: right;
+    margin-bottom: 20px;
+    background-color: #AEC9A1;
+    color: #0A1C02;
+    height: 300px;
+    border: 1px solid #B892E0;
+}

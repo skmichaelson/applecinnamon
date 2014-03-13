@@ -1,0 +1,69 @@
+<style>
+.photo {
+  float: left;
+  width: 348px;
+  height: 261px;
+  margin: 14px 0px 0px 14px;
+  border: 5px solid #95AD89;
+}
+
+.photo div {
+  display: none;
+}
+
+.caption {
+  float: right;
+  border: 1px solid #95AD89;
+  width: 115px;
+  height: 266px;
+  margin: 14px 14px 0px 0px;
+  font-style: italic;
+  line-height: 1.2em;
+  padding: 5px 8px 0px 5px;
+  background-color: #C4DBB8;
+  color: #0A1C02;
+}
+
+.caption div {
+  display: none;
+}
+
+div.visible {
+  display: block;
+}
+
+</style>
+
+<section class="photo">
+  <div data-id="1" class="visible">
+    <img src='/assets/carousel/cats.jpg' width="348px" height="261px">
+  </div>
+
+  <div data-id="2">
+    <img src='/assets/carousel/Greyhouse.png' width="348px" height="261px">
+  </div>
+
+  <div data-id="3">
+    <img src='/assets/carousel/snail.jpg' width="348px" height="261px">
+  </div>
+</section>
+
+<section class="caption">
+  <div data-id="1" class="visible">
+    Loving cats is a prerequisite for being a good programmer,
+    so here's a picture of my cats! Chase is the hungry one,
+    and Calleigh is his snack.
+  </div>
+
+  <div data-id="2">
+    Performing at Greyhouse coffehouse in West Lafayette, IN.
+    If you're a musician and looking for a cellist,
+    <a href="#contact">send me a message</a>!
+  </div>
+
+  <div data-id="3">
+    I love little critters, including the slimy and scaly ones.
+    I found this little guy at Evernote. I was really excited,
+    but I don't think the snail reciprocated those feelings.
+  </div>
+</section>

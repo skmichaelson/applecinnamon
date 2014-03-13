@@ -1,0 +1,58 @@
+#sidebar {
+  margin: 0px;
+  width: 210px;
+  background-color: #AEC9A1;
+  color: #111;
+  padding: 5px 0px;
+  border: 1px solid #555;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  z-index: 2;
+}
+
+#sidebar li > a {
+  border-bottom: 1px solid black;
+  padding: 10px 5px;
+  margin: 0px 5px;
+  display: block;
+  color: #0A1C02;
+}
+
+#sidebar li > a:hover {
+  background-color: #8FA883
+}
+
+#florish {
+  width: 230px;
+  float: left;
+  position: relative;
+}
+
+#name-position {
+  display: block;
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 0px auto;
+  background-color: #eee;
+  position: relative;
+}
+
+#caption-top {
+  top: 0;
+  left: 5px;
+  position: absolute;
+  color: #BCA0EB;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+#caption-bottom {
+  bottom: 5px;
+  right: 5px;
+  position: absolute;
+  color: #BCA0EB;
+  font-style: italic;
+  font-family: cursive;
+}
