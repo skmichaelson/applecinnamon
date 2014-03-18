@@ -1,0 +1,32 @@
+.photo {
+  float: left;
+  width: 348px;
+  height: 261px;
+  margin: 14px 0px 0px 14px;
+  border: 5px solid #95AD89;
+}
+
+.photo div {
+  display: none;
+}
+
+.caption {
+  float: right;
+  border: 1px solid #95AD89;
+  width: 115px;
+  height: 266px;
+  margin: 14px 14px 0px 0px;
+  font-style: italic;
+  line-height: 1.2em;
+  padding: 5px 8px 0px 5px;
+  background-color: #C4DBB8;
+  color: #0A1C02;
+}
+
+.caption div {
+  display: none;
+}
+
+div.visible {
+  display: block;
+}
