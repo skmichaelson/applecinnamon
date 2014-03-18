@@ -16,7 +16,6 @@ SarahWebsite.Views.Home = Backbone.View.extend({
   },
 
   closeResume: function (event) {
-    console.log(event);
     $("#resume").removeClass("has-active-modal");
   },
 
