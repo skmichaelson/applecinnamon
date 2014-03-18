@@ -8,8 +8,7 @@ SarahWebsite.Routers.Contents = Backbone.Router.extend({
     "about_me": "aboutMe",
     "contact": "contact",
     "projects": "projects",
-    "resume": "resume",
-    "close_resume": "closeResume"
+    "resume": "resume"
   },
 
   index: function () {
@@ -35,8 +34,4 @@ SarahWebsite.Routers.Contents = Backbone.Router.extend({
   resume: function () {
     $("#resume").addClass("has-active-modal");
   },
-
-  closeResume: function () {
-    $("#resume").removeClass("has-active-modal");
-  }
 })

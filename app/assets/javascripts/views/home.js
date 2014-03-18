@@ -11,7 +11,13 @@ SarahWebsite.Views.Home = Backbone.View.extend({
   },
 
   events: {
-    "click .photo div": "changePhoto"
+    "click .photo div": "changePhoto",
+    "click #resume a": "closeResume"
+  },
+
+  closeResume: function (event) {
+    console.log(event);
+    $("#resume").removeClass("has-active-modal");
   },
 
   changePhoto: function (event) {
