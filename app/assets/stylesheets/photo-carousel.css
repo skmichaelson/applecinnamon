@@ -18,13 +18,15 @@
   margin: 14px 14px 0px 0px;
   font-style: italic;
   line-height: 1.2em;
-  padding: 5px 8px 0px 5px;
+  padding: 5px 5px 0px 5px;
   background-color: #C4DBB8;
   color: #0A1C02;
+  text-align: center;
 }
 
 .caption div {
   display: none;
+  padding-right: 1px;
 }
 
 div.visible {

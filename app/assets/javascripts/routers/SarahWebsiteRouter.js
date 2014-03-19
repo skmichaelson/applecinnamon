@@ -1,6 +1,6 @@
 SarahWebsite.Routers.Contents = Backbone.Router.extend({
   initialize: function (options) {
-    this.$rootEl = options.$rootEl;
+    this.$rootEl = $('#display');
   },
 
   routes: {
@@ -12,26 +12,34 @@ SarahWebsite.Routers.Contents = Backbone.Router.extend({
   },
 
   index: function () {
-    home = new SarahWebsite.Views.Home();
-    $('#display').html(home.render().$el);
+    var home = new SarahWebsite.Views.Home();
+    this._swapView(home);
   },
 
   aboutMe: function () {
-    aboutMe = new SarahWebsite.Views.AboutMe();
-    $('#display').html(aboutMe.render().$el);
+    var aboutMe = new SarahWebsite.Views.AboutMe();
+    this._swapView(aboutMe);
   },
 
   contact: function () {
-    contact = new SarahWebsite.Views.ContactForm();
-    $('#display').html(contact.render().$el);
+    var contact = new SarahWebsite.Views.ContactForm();
+    this._swapView(contact);
   },
 
   projects: function () {
-    projects = new SarahWebsite.Views.Projects();
-    $('#display').html(projects.render().$el);
+    var projects = new SarahWebsite.Views.Projects();
+    this._swapView(projects);
   },
 
   resume: function () {
     $("#resume").addClass("has-active-modal");
   },
-})
+
+  _swapView: function(view){
+    this.currentView && this.currentView.remove();
+    this.currentView = view;
+    this.$rootEl.html(view.render().$el);
+  }
+
+
+});
