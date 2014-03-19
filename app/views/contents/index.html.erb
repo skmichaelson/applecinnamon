@@ -15,7 +15,6 @@
 <!-- End of resume -->
 
 <section id="header" class="group">
-  <%= link_to "Home", '/' %>
   <!-- <h1>Insert Icon Here</h1> -->
   <ul class="group">
     <li><%= link_to "Email", "mailto:Sarah.Michaelson@gmail.com" %></li>
@@ -30,6 +29,7 @@
   <div id="florish" class="group">
     <%= image_tag 'paisley.png' %>
     <section id="sidebar">
+      <a href="/">
       <div id="name-position">
         <%= image_tag 'parkbench.jpg' %>
 
@@ -40,6 +40,7 @@
         <div id="caption-bottom">
           Web Developer
         </div>
+        </a>
       </div>
 
       <ul class="group">
@@ -52,23 +53,20 @@
   </div>
 
   <section class="group" id="display">
-    Hello! I'm Sarah, New York based Nutrition Scientist and
-    running enthusiast turned web developer. My skill set includes:
-
-      <ul>
-        <li>Ruby on Rails</li>
-        <li>JavaScript</li>
-        <li>HTML/CSS</li>
-        <li>Kitchen improv</li>
-      </ul>
-
-    When I'm not hacking, you can find me running (if you can catch
-    me!), playing the cello, or mourning the loss of my single-serving
-    French press.
   </section>
 
-<!-- Footer -->
+  <style>
+  #display {
+    width: 530px;
+    float: right;
+    margin-bottom: 20px;
+    background-color: #AEC9A1;
+    color: #0A1C02;
+    height: 300px;
+    border: 1px solid #B892E0;
+  }
 
+  </style>
 </main>
 
 <style>
