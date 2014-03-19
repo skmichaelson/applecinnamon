@@ -1,19 +1,80 @@
-Fitness App (Rails, Ruby, HTML, CSS, RSpec)
-(Inspired by myfitnesspal)
-https://github.com/skmichaelson/fitnessapp (source)
-http://applecinnamon-fitness-app.herokuapp.com (live)
+<style>
 
-<ul class="description">
-  <li>Includes a custom script to import CSV
+.skills {
+  font-style: italic;
+  float: right;
+  padding-right: 15px;
+  padding-top: 6px;
+}
+
+.screenshots {
+  margin: 10px auto;
+  padding-left: 6px;
+}
+
+.screenshots img {
+  float: center;
+  padding: 0px 5px;
+}
+
+.project-links {
+  margin-left: 30px;
+  display: inline block;
+}
+
+.project-links li {
+  float: left;
+  text-align: center;
+}
+
+.project-links li a {
+  border: 1px solid black;
+  display: block;
+  padding: 5px;
+  width: 75px;
+}
+
+.features {
+  border: 1px solid black;
+  display: block;
+  margin: auto 25px;
+  text-align: center;
+}
+
+.features h1 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+</style>
+
+<div class="greeting">Fitness App (Inspired by <a href="http://www.myfitnesspal.com/">myfitnesspal</a>)</div>
+<span class="group skills">Rails, Ruby, HTML, CSS, RSpec</span>
+
+<ul class="group project-links">
+  <li><a href="https://github.com/skmichaelson/fitnessapp">Source</a></li>
+  <li><a href="http://applecinnamon-fitness-app.herokuapp.com">Live</a></li>
+</ul>
+
+<div class="group screenshots">
+  <img src='/assets/screenshots/search.png' width="160" height="120">
+  <img src='/assets/screenshots/friends.png' width="160" height="120">
+  <img src='/assets/screenshots/signin.png' width="160" height="120">
+</div>
+
+<div class="features">
+  <h1>Features</h1>
+
+  <section data-id="1">Includes a custom script to import CSV
     files from the USDA food database and convert
     each entry into a food object
-  </li>
+  </section>
 
-  <li>Calculates BMR using the Harris-Benedict equation
+  <section data-id="2">Calculates BMR using the Harris-Benedict equation
     and estimates calorie goals based on user-provided input
-  </li>
+  </section>
 
-  <li>FeedItems and ReportItems belong to weigh in or daily
+  <section data-id="3">FeedItems and ReportItems belong to weigh in or daily
     entry objects via polymorphic associations
-  </li>
-</ul>
+  </section>
+</div>

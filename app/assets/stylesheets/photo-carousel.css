@@ -6,6 +6,10 @@
   border: 5px solid #95AD89;
 }
 
+.photo:hover {
+  border: 5px solid #7D9671;
+}
+
 .photo div {
   display: none;
 }
