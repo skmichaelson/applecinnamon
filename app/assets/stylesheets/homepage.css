@@ -1,0 +1,25 @@
+.greeting {
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: right;
+  padding: 5px 10px 0px 10px;
+}
+
+.greeting-text {
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+.greeting-text li {
+  position: relative;
+  display: inline-block;
+  width: 220px;
+  padding-left: 30px;
+  padding-top: 5px;
+}
+
+.greeting-text img {
+  position: absolute;
+  left: 0px;
+}
