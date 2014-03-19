@@ -1,6 +1,4 @@
 SarahWebsite.Views.AboutMe = Backbone.View.extend({
-  $el: $("#display"),
-
   className: "group",
 
   template: JST['aboutMe'],

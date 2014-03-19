@@ -1,5 +1,4 @@
 SarahWebsite.Views.ContactForm = Backbone.View.extend({
-  $el: $("#message-form"),
   className: "group",
 
   template: JST['contact'],
