@@ -35,7 +35,6 @@
 }
 
 .features {
-  border: 1px solid black;
   display: block;
   margin: auto 25px;
   text-align: center;
@@ -62,10 +61,28 @@
   <img src='/assets/screenshots/signin.png' width="160" height="120">
 </div>
 
-<div class="features">
-  <h1>Features</h1>
+<style>
+.features section {
+  display: none;
+}
 
-  <section data-id="1">Includes a custom script to import CSV
+section.visible {
+  display: block;
+}
+
+h1 > span {
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 2px 7px;
+  margin: 0px 50px;
+}
+</style>
+
+<div class="features">
+  <h1><span id="prev">prev</span>Features<span id="next">next</span></h1>
+
+  <section data-id="1" class="visible">Includes a custom script to import CSV
     files from the USDA food database and convert
     each entry into a food object
   </section>
