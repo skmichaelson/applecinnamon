@@ -14,7 +14,13 @@
 
 .screenshots img {
   float: center;
-  padding: 0px 5px;
+  margin: 0px 3px;
+  border: 2px solid #62735B;
+}
+
+.screenshots img:hover {
+  border: 2px solid #D8DB74;
+  cursor: pointer;
 }
 
 .project-links {
@@ -25,13 +31,24 @@
 .project-links li {
   float: left;
   text-align: center;
+  padding-top: 3px;
 }
 
 .project-links li a {
-  border: 1px solid black;
+  position: relative;
+  border: 1px solid #62735B;
+  border-radius: 10px;
   display: block;
-  padding: 5px;
-  width: 75px;
+  padding: 2px 7px;
+  width: 70px;
+  margin: 0px 5px;
+  background-color: #C6DEBA;
+  box-shadow: 0 2px #333;
+}
+
+.project-links li a:hover {
+  box-shadow: none;
+  top: 2px;
 }
 
 .features {
@@ -71,11 +88,20 @@ section.visible {
 }
 
 h1 > span {
-  border: 1px solid black;
+  position: relative;
+  border: 1px solid #62735B;
   border-radius: 10px;
   font-size: 14px;
   padding: 2px 7px;
   margin: 0px 50px;
+  background-color: #C6DEBA;
+  box-shadow: 0 2px #333;
+}
+
+h1 > span:hover {
+  cursor: pointer;
+  box-shadow: none;
+  top: 2px;
 }
 </style>
 
