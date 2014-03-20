@@ -63,6 +63,23 @@
   padding-bottom: 5px;
 }
 </style>
+<!-- Photo modal -->
+
+<section id="photo-modal" class="group">
+  <section class="modal">
+    <article class="modal-box">
+      <span class="modal-close-button"><a href="/#projects">&times;</a></span>
+
+      <div id="selected-photo">
+        <img data-id="1" src='/assets/screenshots/search.png'>
+        <img data-id="2" src='/assets/screenshots/friends.png'>
+        <img data-id="3" src='/assets/screenshots/signin.png'>
+      </div>
+    </article>
+  </section>
+</section>
+
+<!-- End photo modal -->
 
 <div class="greeting">Fitness App (Inspired by <a href="http://www.myfitnesspal.com/">myfitnesspal</a>)</div>
 <span class="group skills">Rails, Ruby, HTML, CSS, RSpec</span>
@@ -73,9 +90,9 @@
 </ul>
 
 <div class="group screenshots">
-  <img src='/assets/screenshots/search.png' width="160" height="120">
-  <img src='/assets/screenshots/friends.png' width="160" height="120">
-  <img src='/assets/screenshots/signin.png' width="160" height="120">
+  <img data-id="1" src='/assets/screenshots/search.png' width="160" height="120">
+  <img data-id="2" src='/assets/screenshots/friends.png' width="160" height="120">
+  <img data-id="3" src='/assets/screenshots/signin.png' width="160" height="120">
 </div>
 
 <style>
