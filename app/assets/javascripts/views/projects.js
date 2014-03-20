@@ -17,7 +17,9 @@ SarahWebsite.Views.Projects = Backbone.View.extend({
 
   events: {
     "click #next": "nextFeature",
-    "click #prev": "prevFeature"
+    "click #prev": "prevFeature",
+    "click img": "showPhoto",
+    "click #photo-modal a": "hidePhoto"
   },
 
   nextFeature: function (event) {
@@ -42,5 +44,19 @@ SarahWebsite.Views.Projects = Backbone.View.extend({
     var $newFeature = $('section').find("[data-id='" + newId + "']");
 
     this.swapView($feature, $newFeature);
+  },
+
+  showPhoto: function (event) {
+    event.preventDefault();
+    var chosenPhoto = $(event.currentTarget);
+    var photoId = chosenPhoto.attr("data-id");
+    var $activePhoto = $("#selected-photo").find("[data-id='" + photoId + "']");
+    $('#photo-modal').addClass('has-active-modal');
+    $activePhoto.addClass('visible');
+  },
+
+  hidePhoto: function () {
+    $('#photo-modal').removeClass('has-active-modal');
+    $("#selected-photo img").removeClass('visible');
   }
 });
