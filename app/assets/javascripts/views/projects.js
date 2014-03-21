@@ -5,6 +5,11 @@ SarahWebsite.Views.Projects = Backbone.View.extend({
     newView.addClass("visible");
   },
 
+  findNewFeature: function(newId) {
+    var newFeature = $('section').find("[data-id='" + newId + "']")[2];
+    return $(newFeature);
+  },
+
   className: "group",
 
   template: JST['projects'],
@@ -29,7 +34,7 @@ SarahWebsite.Views.Projects = Backbone.View.extend({
     var $feature = $(feature);
     var oldId = $feature.attr("data-id");
     var newId = (oldId % 3) + 1;
-    var $newFeature = $('section').find("[data-id='" + newId + "']");
+    var $newFeature = this.findNewFeature(newId);
 
     this.swapView($feature, $newFeature);
   },
@@ -41,7 +46,7 @@ SarahWebsite.Views.Projects = Backbone.View.extend({
     var $feature = $(feature);
     var oldId = $feature.attr("data-id");
     var newId = ((oldId + 1) % 3) + 1;
-    var $newFeature = $('section').find("[data-id='" + newId + "']");
+    var $newFeature = this.findNewFeature(newId);
 
     this.swapView($feature, $newFeature);
   },

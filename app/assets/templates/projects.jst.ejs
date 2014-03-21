@@ -6,18 +6,27 @@
 #selected-photo img.visible {
   display: block;
 }
+
+.modal-box-photos {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  background: #fff;
+  margin-left: -400px;
+}
+
 </style>
 <!-- Photo modal -->
 
 <section id="photo-modal" class="group">
   <section class="modal">
-    <article class="modal-box">
+    <article class="modal-box-photos">
       <span class="modal-close-button"><a href="/#projects">&times;</a></span>
 
       <div id="selected-photo">
-        <img data-id="1" src='/assets/screenshots/search.png'>
-        <img data-id="2" src='/assets/screenshots/friends.png'>
-        <img data-id="3" src='/assets/screenshots/signin.png'>
+        <img data-id="1" src='/assets/screenshots/sign_in.png' width="800" height="600">
+        <img data-id="2" src='/assets/screenshots/find_friends.png' width="800" height="600">
+        <img data-id="3" src='/assets/screenshots/search_foods.png' width="800" height="600">
       </div>
     </article>
   </section>
@@ -34,9 +43,9 @@
 </ul>
 
 <div class="group screenshots">
-  <img data-id="1" src='/assets/screenshots/search.png' width="160" height="120">
-  <img data-id="2" src='/assets/screenshots/friends.png' width="160" height="120">
-  <img data-id="3" src='/assets/screenshots/signin.png' width="160" height="120">
+  <img data-id="1" src='/assets/screenshots/sign_in.png' width="160" height="120">
+  <img data-id="2" src='/assets/screenshots/find_friends.png' width="160" height="120">
+  <img data-id="3" src='/assets/screenshots/search_foods.png' width="160" height="120">
 </div>
 
 
