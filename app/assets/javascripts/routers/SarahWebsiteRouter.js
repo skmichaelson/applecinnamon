@@ -1,5 +1,5 @@
 SarahWebsite.Routers.Contents = Backbone.Router.extend({
-  initialize: function (options) {
+  initialize: function () {
     this.$rootEl = $('#display');
   },
 

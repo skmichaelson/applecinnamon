@@ -12,6 +12,6 @@ window.SarahWebsite = {
     }
 };
 
-$(document).ready(function(){
+$(document).ready(function() {
     SarahWebsite.initialize();
 });

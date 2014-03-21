@@ -54,7 +54,6 @@ SarahWebsite.Views.Projects = Backbone.View.extend({
   showPhoto: function (event) {
     event.preventDefault();
     var chosenPhoto = $(event.currentTarget);
-    console.log(chosenPhoto);
     var photoId = chosenPhoto.attr("data-id");
     var $activePhoto = $("#selected-photo").find("[data-id='" + photoId + "']");
     $('#photo-modal').addClass('has-active-modal');
