@@ -35,7 +35,7 @@ SarahWebsite.Routers.Contents = Backbone.Router.extend({
     $("#resume").addClass("has-active-modal");
   },
 
-  _swapView: function(view){
+  _swapView: function(view) {
     this.currentView && this.currentView.remove();
     this.currentView = view;
     this.$rootEl.html(view.render().$el);
