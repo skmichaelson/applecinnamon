@@ -3,17 +3,17 @@ SarahWebsite.Views.AboutMe = Backbone.View.extend({
 
   template: JST['aboutMe'],
 
+  events: {
+    "click .photo div": "changePhoto"
+  },
+
   render: function() {
     console.log("In the about me render function - line 1")
-    console.log(this.template);
+    console.log(this);
     var renderedContent = this.template();
     console.log("About me render function, post rendered content")
     this.$el.html(renderedContent);
     return this;
-  },
-
-  events: {
-    "click .photo div": "changePhoto"
   },
 
   changePhoto: function (event) {
