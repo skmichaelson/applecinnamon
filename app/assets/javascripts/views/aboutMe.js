@@ -1,11 +1,12 @@
 SarahWebsite.Views.AboutMe = Backbone.View.extend({
+  swapView: function(oldView, newView) {
+    oldView.removeClass("visible");
+    newView.addClass("visible");
+  },
+
   className: "group",
 
   template: JST['aboutMe'],
-
-  events: {
-    "click .photo div": "changePhoto"
-  },
 
   render: function() {
     console.log("In the about me render function - line 1");
@@ -14,6 +15,10 @@ SarahWebsite.Views.AboutMe = Backbone.View.extend({
     console.log("About me render function, post rendered content")
     this.$el.html(renderedContent);
     return this;
+  },
+
+  events: {
+    "click .photo div": "changePhoto"
   },
 
   changePhoto: function (event) {
@@ -28,9 +33,7 @@ SarahWebsite.Views.AboutMe = Backbone.View.extend({
     var $newCaption = $('.caption').find("[data-id='" + newId + "']");
 
     // Swap the photos and the captions
-    $pic.removeClass("visible");
-    $caption.removeClass("visible");
-    $newPic.addClass("visible");
-    $newCaption.addClass("visible");
+    this.swapView($pic, $newPic);
+    this.swapView($caption, $newCaption);
   }
 });
