@@ -6,7 +6,7 @@ SarahWebsite.Views.AboutMe = Backbone.View.extend({
 
   className: "group",
 
-  template: JST['aboutMe'],
+  template: JST['aboutme'],
 
   render: function() {
     console.log("In the about me render function - line 1");
