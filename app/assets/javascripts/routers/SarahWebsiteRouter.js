@@ -41,5 +41,4 @@ SarahWebsite.Routers.Contents = Backbone.Router.extend({
     this.$rootEl.html(view.render().$el);
   }
 
-
 });
